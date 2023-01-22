@@ -10,8 +10,7 @@ gulp.task('server', function() {
     browserSync({
         server: {
             baseDir: "src"
-        },
-        browser: 'firefox'
+        }
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);

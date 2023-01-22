@@ -1,45 +1,41 @@
 .catalog {
     padding-bottom: 100px;
     &__tabs {
+        margin-top: 70px;
+        list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 70px;
-        list-style-type: none;
         margin-bottom: 0;
         padding-left: 0;
     }
-
     &__tab {
-        margin: 0 5px;
         width: 220px;
         height: 50px;
         border: 2px solid #d0d0d0;
+        color: #6b6b6b;
         font-size: 18px;
         font-weight: 400;
         text-transform: uppercase;
         text-align: center;
         line-height: 48px;
         transform: skewX(-25deg);
+        margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
-        &:hover{
-            box-shadow: 3px 3px $main-color;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
             border: none;
         }
         div {
             transform: skewX(25deg);
         }
         &_active {
-            background-color: $main-color;
             color: #fff;
-            border-color: $main-color;
-            &:hover {
-                box-shadow: 3px 3px #d0d0d0;
-            }
+            background-color: $main-color;
+            border: none;
         }
     }
-
     &__content {
         margin-top: 60px;
         display: none;
@@ -49,7 +45,6 @@
             display: flex;
         }
     }
-
     &-item {
         width: 300px;
         min-height: 440px;
@@ -65,16 +60,16 @@
         }
         &__subtitle {
             margin-top: 20px;
+            color: #0d0d0d;
             font-size: 16px;
             font-weight: 700;
-            color: #0d0d0d;
             text-align: center;
         }
         &__descr {
             margin-top: 16px;
+            color: #0d0d0d;
             font-size: 14px;
             font-weight: 300;
-            color: #0d0d0d;
             text-align: center;
         }
         &__link {
@@ -101,13 +96,13 @@
             justify-content: space-between;
             align-items: center;
         }
-        &__price {
-            color: #555;
+        &__old-price {
+            color: #555555;
             font-size: 14px;
             font-weight: 300;
             text-decoration: line-through;
         }
-        &__discount {
+        &__price {
             color: #050505;
             font-size: 20px;
             font-weight: 700;
@@ -118,7 +113,7 @@
         }
         &__content {
             width: 50%;
-            margin-right: 0;
+            margin-right: 0px;
             transform: translateX(-100%);
             transition: 0.5s all;
             &_active {
@@ -138,11 +133,11 @@
             list-style-type: none;
             &_active {
                 transform: translateX(-100%);
-                margin-left: 0;
+                margin-left: 0px;
             }
             li {
                 position: relative;
-                color: #555;
+                color: #555555;
                 font-size: 14px;
                 font-weight: 300;
                 margin-bottom: 20px;
